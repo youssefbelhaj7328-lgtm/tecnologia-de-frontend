@@ -36,7 +36,7 @@
 
         /*PSEUDO ELEMENTOS */
 
-        #p3::first-line, #p4::first-line, #p5 ::first-line {
+        .info::first-line{
 
 color: red;
 font-variant: small-caps;
@@ -44,11 +44,16 @@ font-size: 19px;
 
 
 
-
-
-
         }
+
+/* como ejercicio : selecionar la primera letra de los parrafos de la clase info y aumentarle de la letra al 200% */
+.info::first-letter {
+        color: blueviolet;
+        font-size: 200%;
+    }
+
     </style>
+
 
    </head>
 
@@ -69,9 +74,9 @@ elemento por dobles dos puntos (::), en lugar de dos puntos (:) solamente
 como es el caso de las pseudo clases -->
 
 <!-- A modo de ejemplo: Vamos a aplicar un estilo CSS a las primeras lineas de los parrafos que se muestran a continuacion -->
- <p id="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo, qui aliquam labore totam cupiditate illo natus minima veritatis eligendi sapiente ducimus hic, quasi impedit saepe, sequi fugiat quo consequatur.</p>
- <p id="p4">Quas molestias aspernatur, accusantium quod aliquid explicabo, non omnis, perspiciatis optio dolore saepe corporis rem! A itaque, hic, delectus eius molestiae aperiam excepturi possimus deleniti in quibusdam nihil soluta quam.</p>
- <p id="p5">Voluptas necessitatibus facilis voluptatibus perferendis? A ducimus labore voluptatibus illum quisquam omnis rem aliquam, optio asperiores hic dolores pariatur, consectetur reprehenderit officia temporibus perspiciatis, ab rerum quidem necessitatibus laboriosam ipsa.</p>
+ <p id="p3" class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo, qui aliquam labore totam cupiditate illo natus minima veritatis eligendi sapiente ducimus hic, quasi impedit saepe, sequi fugiat quo consequatur.</p>
+ <p id="p4"clase="info">Quas molestias aspernatur, accusantium quod aliquid explicabo, non omnis, perspiciatis optio dolore saepe corporis rem! A itaque, hic, delectus eius molestiae aperiam excepturi possimus deleniti in quibusdam nihil soluta quam.</p>
+ <p id="p5"clase="info">Voluptas necessitatibus facilis voluptatibus perferendis? A ducimus labore voluptatibus illum quisquam omnis rem aliquam, optio asperiores hic dolores pariatur, consectetur reprehenderit officia temporibus perspiciatis, ab rerum quidem necessitatibus laboriosam ipsa.</p>
 
  
 
