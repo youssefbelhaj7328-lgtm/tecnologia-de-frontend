@@ -3,51 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--   La etiqueta meta, a continuación es lo minimo para garantizar que 
-    la pagina web se muestre correctamente en diferentes dispositivos, es decir,
-    para que sea responsive design, que responsive no quiere decir responsable, sino
-    que se adapta a diferentes tamaños de pantalla -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro al HTML</title>
     <style>
+        /* cuando el el link no ha sido visitado todavia */
+        a:link {
+
+            color: red;
+        }
 
         /* 
-        Selectores basico de CSS 
+            cuando  el link ha sido visitado */
+        a:visited {
+
+            color: green;
+        }
+
+        /*  cundo el raton esta encima de enlace sin hacer clik en el mismo */
+
+        a:hover {
+
+            color: hotpink;
+        }
+
+        /* cuando el link ha sudo soleccionado  cuando esta activo esdecir cuando hacemos clik y mantenemos el clik preciondo sobre el link*/
+
+        a:active {
+
+            color: blue;
+        }
         
-        */
-/* por nombre del elemento */
- p {
-
-color: yellow;
-
- }
-/*  selecionar el mismo  parrafo pero por id */
-#parrafo1 {
-    background-color:blue;
-
-}
-
-/* Selector por la clase del elemento, es decir, seleccionar 
-los elementos que tienen el mismo atributo class */
-
-.info{
-
-   border: 3px dashed black; 
-   background-color:  brown;
-}
     </style>
 
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
+    <!-- Las PSeudoclases, son selectores que se aplica en dependencia  de estado de elemento -->
+
+    <h1>Aplicar estilo a un enlace en independencia del estado del mismo</h1>
+
+    <p><a href="https://vodafone.mejoresofertasfibra.com/">vodafone</a></p>
+
+    <p><strong>Nota: </strong>a:hover tiene que ir despues de a:link y a:visited en las reglas de estilo para que sean efectivas. Y ademas,
+la pseudoclase a:active tiene que ir despues de a:hover.</p>
 
 <body>
-     <!--Introduccion al CSS, primero entender donde sale el termino cascada  -->
 
-     <p id="parrafo1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint assumenda eum voluptas inventore exercitationem voluptate veniam aliquid, iusto sit optio nemo tenetur enim blanditiis similique quibusdam, molestias sapiente minus modi!</p>
-
-     <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem. Laudantium error est, asperiores id dolore reiciendis reprehenderit in officiis architecto nesciunt, sunt eligendi necessitatibus vel quisquam ut deserunt illo!</p>
-     <p class="info">Voluptates reiciendis consequuntur velit, expedita sequi possimus! Blanditiis optio quis totam, aut tempora voluptates eos autem mollitia, error voluptatem quaerat praesentium deleniti voluptatibus? Doloremque soluta fugiat cumque, quis explicabo voluptatem!</p>
-     <p class="info">Explicabo harum tempora provident nisi earum ex accusantium iusto sequi pariatur cupiditate enim omnis sunt, deleniti et quod eveniet iure facere natus ut aliquam vero. Molestias ratione cumque similique aperiam?</p>
 
 </body>
 
